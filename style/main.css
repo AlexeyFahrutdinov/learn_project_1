@@ -79,15 +79,15 @@ h2.title_h2::after {
 }
 
 .story_item:nth-child(1) {
-    background-image: url(/img/we_plan.png);
+    background-image: url(../img/we_plan.png);
 }
 
 .story_item:nth-child(2) {
-    background-image: url(/img/we_manage.png);
+    background-image: url(../img/we_manage.png);
 }
 
 .story_item:nth-child(3) {
-    background-image: url(/img/we_build.png);
+    background-image: url(../img/we_build.png);
     margin-right: 0;
 }
 
