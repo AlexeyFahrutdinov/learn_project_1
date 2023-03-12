@@ -40,7 +40,9 @@ body {
     margin: 0 auto;
     text-align: center;
     padding-top: 30px;
-    position: relative;
+    background-size:cover ;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .fs-img {
@@ -59,12 +61,7 @@ h1 {
 }
 
 .fs-text-center {
-    margin: 0;
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-53%, -50%)
+    margin-top: 20%;
 }
 
 .fs-h3 {
@@ -81,12 +78,7 @@ h1 {
     font-size: 11px;
     color: #ffffff;
     text-transform: uppercase;
-    margin: 0;
-    position: absolute;
-    bottom: 13%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-53%, -50%)
+    margin-top: 20%;
 }
 
 
@@ -180,18 +172,29 @@ h2.title_h2::after {
         flex-wrap: wrap;
     }
 
+    .top {
+        height: 550px;
+    }
+
+    h1 {
+        line-height: 60px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        background-color: #00A4E5;
-    }
-
     .story_right {
         flex-wrap: wrap;
     }
 
     .story_item {
         margin-bottom: 20px;
+    }
+    h1 {
+        line-height: 60px;
+    }
+
+    .top {
+        height: 400px;
     }
 }
