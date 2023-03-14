@@ -10,9 +10,7 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
+*,*::before,*::after {
     box-sizing: inerhit;
 }
 
@@ -157,6 +155,69 @@ h2.title_h2::after {
     background-image: url();
 }
 
+
+.oc {
+    padding-top: 50px;
+}
+.oc-inner {
+}
+.oc-top {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.oc-h2 {
+    margin-right: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.oc-h2::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    display: block;
+    margin: 10px auto 0;
+}
+
+
+.oc-button-block {
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.oc button {
+    margin-left: 50px;
+    appearance: none;
+    background-color: #00A4E5;
+    border: 0 solid #00A4E5 ;
+    font-size: 13px;
+    padding: 11px 29px;
+    line-height: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.oc-cards {
+       display: flex;
+    justify-content: center;
+}
+.oc-card {
+    max-width: 295px;
+    margin: 26px;
+}
+.oc-card2 {
+}
+.oc-card3 {
+}
+
+/*
 @media screen and (max-width: 1440px) {
     .container {
         padding: 0 50px;
@@ -198,3 +259,5 @@ h2.title_h2::after {
         height: 400px;
     }
 }
+
+*/
