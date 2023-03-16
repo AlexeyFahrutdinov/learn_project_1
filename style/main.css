@@ -10,7 +10,9 @@ html {
     box-sizing: border-box;
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
     box-sizing: inerhit;
 }
 
@@ -20,12 +22,14 @@ body {
     color: #48555B;
 }
 
+/* Было в курсе но не понятно зачем
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 250px;
 }
+*/
 
 /*Первый экран*/
 
@@ -38,7 +42,7 @@ body {
     margin: 0 auto;
     text-align: center;
     padding-top: 30px;
-    background-size:cover ;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
 }
@@ -67,7 +71,7 @@ h1 {
     font-size: 16px;
     color: #ffffff;
     font-weight: 200;
-    
+
 
 }
 
@@ -159,13 +163,15 @@ h2.title_h2::after {
 .oc {
     padding-top: 50px;
 }
-.oc-inner {
-}
+
+.oc-inner {}
+
 .oc-top {
     display: flex;
     justify-content: center;
     margin: 50px 0;
 }
+
 .oc-h2 {
     margin-right: 80px;
     text-transform: uppercase;
@@ -188,14 +194,14 @@ h2.title_h2::after {
     display: flex;
     align-items: center;
 
-    
+
 }
 
 .oc button {
     margin-left: 50px;
     appearance: none;
     background-color: #00A4E5;
-    border: 0 solid #00A4E5 ;
+    border: 0 solid #00A4E5;
     font-size: 13px;
     padding: 11px 29px;
     line-height: 0px;
@@ -205,17 +211,56 @@ h2.title_h2::after {
 }
 
 .oc-cards {
-       display: flex;
+    display: flex;
     justify-content: center;
 }
+
 .oc-card {
     max-width: 295px;
     margin: 26px;
+    border: 1px solid #E6E6E6;
+    padding: 20px;
 }
-.oc-card2 {
+
+.oc-card2 {}
+
+.oc-card3 {}
+
+/*Блок с призывом в футере */
+
+.cta-footer {
+    background-image: url(../img/bg_footer.png);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 769px;
+    margin: 0 auto;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
 }
-.oc-card3 {
+
+.fa-inner {
+    margin: auto;
+
 }
+
+.cf-h2 {}
+
+.cf-button {
+    appearance: none;
+    background-color: #00A4E5;
+    border: 0 solid #00A4E5;
+    font-size: 13px;
+    padding: 11px 29px;
+    line-height: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+
 
 /*
 @media screen and (max-width: 1440px) {
