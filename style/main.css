@@ -26,7 +26,6 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 250px;
 }
 
 /*Первый экран*/
@@ -376,21 +375,35 @@ p.footer-menu {
 
 
 @media screen and (max-width: 1024px) {
+    .fs-img {
+        top: 3%;
+        max-width: 70px;
+        height: 15px;
+    }
+    
+    .fs-text-center {
+        top: 44%;
+    }
+    
+    h1 {
+        font-size: 48px;
+        line-height: 80%;    
+    }
+    .fs-h3 {
+        margin: 0;
+        font-size: 14px;
+    }
+    .fs-p {
+        font-size: 10px;
+        bottom: 7%;
+    }
+
+
 
     .story_inner {
         flex-wrap: wrap;
     }
 
-    .top {
-        background-image: url(../img/bg_60.png);
-        height: 550px;
-        background-size: contain;
-    background-position: center center;
-    }
-
-    h1 {
-        line-height: 60px;
-    }
 
     .cta-footer {
         height: 450px;
@@ -402,23 +415,39 @@ p.footer-menu {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width:768px) {
+
+    .fs-text-center {
+        top: 42%;
+    }
+    
+    h1 {
+        font-size: 38px;
+    }
+} 
+
+@media screen and (max-width: 576px) {
+
+
+   
+    h1 {
+        font-size: 28px; 
+    }
+    .fs-h3 {
+        margin: 0;
+        font-size: 12px;
+    }
+    .fs-p {
+        font-size: 8px;
+        bottom: 5%;
+    }
+
     .story_right {
         flex-wrap: wrap;
     }
 
     .story_item {
         margin-bottom: 20px;
-    }
-    h1 {
-        line-height: 60px;
-    }
-
-    .top {
-        height: 400px;
-        background-image: url(../img/bg_25.png);
-        background-size: contain;
-    background-position: center center;
     }
     .cta-footer {
         height: 300px;
@@ -429,3 +458,30 @@ p.footer-menu {
     }
 }
 
+@media screen and (max-width: 360px) {
+    .fs-img {
+        top: 3%;
+        max-width: 50px;
+        height: 10px;
+    }
+    
+    .fs-text-center {
+        top: 30%;
+    }
+    
+    h1 {
+        font-size: 24px;
+        line-height: 80%;    
+        letter-spacing:3px
+    }
+    .fs-h3 {
+        margin: 0;
+        font-size: 12px;
+        padding: 5px 30px;
+    }
+    .fs-p {
+        font-size: 8px;
+        bottom: 3%;
+    }
+
+}
